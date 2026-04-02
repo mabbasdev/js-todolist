@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <p class="label">Stay on track</p>
+        <h1>My <span>Tasks</span></h1>
+    </header>
+
+    <main class="card">
+
+        <!-- INPUT ROW — use: #todo-input, #add-btn -->
+        <div class="input-row">
+            <input type="text" id="todo-input" placeholder="Add a new task..." autocomplete="off" />
+            <button id="add-btn" title="Add task">+</button>
+        </div>
+
+        <!-- FILTER TABS — use: .filter-btn, data-filter attribute -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <!-- TODO LIST — use: #todo-list to append/remove <li> items -->
+        <ul id="todo-list">
+
+            <!-- EMPTY STATE — show/hide with JS: #empty-state -->
+            <li id="empty-state" style="display:none;">
+                <span class="icon">✓</span>
+                <p>No tasks yet. Add one above!</p>
+            </li>
+
+            <li class="todo-item" data-id="1">
+                <input type="checkbox" />
+                <span class="todo-text">Build the todo app UI</span>
+                <button class="delete-btn" title="Delete task">×</button>
+            </li>
+
+            <li class="todo-item completed" data-id="2">
+                <input type="checkbox" checked />
+                <span class="todo-text">Plan the JavaScript logic</span>
+                <button class="delete-btn" title="Delete task">×</button>
+            </li>
+
+            <li class="todo-item" data-id="3">
+                <input type="checkbox" />
+                <span class="todo-text">Wire up the add task button</span>
+                <button class="delete-btn" title="Delete task">×</button>
+            </li>
+
+            <li class="todo-item" data-id="4">
+                <input type="checkbox" />
+                <span class="todo-text">Implement filter tabs (All / Active / Completed)</span>
+                <button class="delete-btn" title="Delete task">×</button>
+            </li>
+
+            <li class="todo-item completed" data-id="5">
+                <input type="checkbox" checked />
+                <span class="todo-text">Style the delete button on hover</span>
+                <button class="delete-btn" title="Delete task">×</button>
+            </li>
+
+            <li class="todo-item" data-id="6">
+                <input type="checkbox" />
+                <span class="todo-text">Save tasks to localStorage</span>
+                <button class="delete-btn" title="Delete task">×</button>
+            </li>
+
+            <li class="todo-item" data-id="7">
+                <input type="checkbox" />
+                <span class="todo-text">Handle the Enter key on the input field</span>
+                <button class="delete-btn" title="Delete task">×</button>
+            </li>
+
+            <li class="todo-item" data-id="8">
+                <input type="checkbox" />
+                <span class="todo-text">Use event delegation for dynamic items</span>
+                <button class="delete-btn" title="Delete task">×</button>
+            </li>
+
+        </ul>
+
+        <!-- FOOTER — use: #items-count, #clear-completed-btn -->
+        <div class="footer">
+            <span id="items-count">6 tasks left</span>
+            <button id="clear-completed-btn">Clear completed</button>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
