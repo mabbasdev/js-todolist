@@ -34,6 +34,23 @@ body {
     padding: 60px 16px;
 }
 
+/* ── CUSTOM SCROLLBAR ── */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-dim);
+}
+
 /* ── HEADER ── */
 header {
     text-align: center;
@@ -150,6 +167,8 @@ header h1 span {
 #todo-list {
     list-style: none;
     min-height: 60px;
+    max-height: 50vh;
+    overflow-y: scroll;
 }
 
 /* ── EMPTY STATE ── */
