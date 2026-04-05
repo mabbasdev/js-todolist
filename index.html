@@ -31,64 +31,7 @@
         </div>
 
         <!-- TODO LIST — use: #todo-list to append/remove <li> items -->
-        <ul id="todo-list">
-
-            <!-- EMPTY STATE — show/hide with JS: #empty-state -->
-            <li id="empty-state" style="display:none;">
-                <span class="icon">✓</span>
-                <p>No tasks yet. Add one above!</p>
-            </li>
-
-            <li class="todo-item" data-id="1">
-                <input type="checkbox" />
-                <span class="todo-text">Build the todo app UI</span>
-                <button class="delete-btn" title="Delete task">×</button>
-            </li>
-
-            <li class="todo-item completed" data-id="2">
-                <input type="checkbox" checked />
-                <span class="todo-text">Plan the JavaScript logic</span>
-                <button class="delete-btn" title="Delete task">×</button>
-            </li>
-
-            <li class="todo-item" data-id="3">
-                <input type="checkbox" />
-                <span class="todo-text">Wire up the add task button</span>
-                <button class="delete-btn" title="Delete task">×</button>
-            </li>
-
-            <li class="todo-item" data-id="4">
-                <input type="checkbox" />
-                <span class="todo-text">Implement filter tabs (All / Active / Completed)</span>
-                <button class="delete-btn" title="Delete task">×</button>
-            </li>
-
-            <li class="todo-item completed" data-id="5">
-                <input type="checkbox" checked />
-                <span class="todo-text">Style the delete button on hover</span>
-                <button class="delete-btn" title="Delete task">×</button>
-            </li>
-
-            <li class="todo-item" data-id="6">
-                <input type="checkbox" />
-                <span class="todo-text">Save tasks to localStorage</span>
-                <button class="delete-btn" title="Delete task">×</button>
-            </li>
-
-            <li class="todo-item" data-id="7">
-                <input type="checkbox" />
-                <span class="todo-text">Handle the Enter key on the input field</span>
-                <button class="delete-btn" title="Delete task">×</button>
-            </li>
-
-            <li class="todo-item" data-id="8">
-                <input type="checkbox" />
-                <span class="todo-text">Use event delegation for dynamic items</span>
-                <button class="delete-btn" title="Delete task">×</button>
-            </li>
-
-        </ul>
-
+        <div id="todo-section"></div>
         <!-- FOOTER — use: #items-count, #clear-completed-btn -->
         <div class="footer">
             <span id="items-count">6 tasks left</span>
